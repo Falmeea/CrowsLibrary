@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
-end
-  
  
+end
+  def shop
+  end

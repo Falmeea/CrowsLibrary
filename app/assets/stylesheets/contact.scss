@@ -1,0 +1,130 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: rgba(0, 0, 0, 1);
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container1{
+	width: 75%;
+	height: 20%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	transform-origin: center;
+	animation-name: rotate;
+	animation-duration: 60s;
+  animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+
+.button1{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition-duration: 0.3s;
+}
+
+.button1 > i {
+	font-size: 50px;
+}
+
+.button1 > i.fa-twitter {
+	color: #1da1f2;
+	text-shadow: 0 0 15px #1da1f2,
+				 0 0 25px #1da1f2,
+				 0 0 35px #1da1f2, 
+				 0 0 55px #1da1f2; 
+	animation: antiRotate 60s infinite ease-in-out;
+}
+
+.button1 > i.fa-facebook-f {
+	color: #4267B2; 
+	text-shadow: 0 0 15px #4267B2,
+				 0 0 25px #4267B2,
+				 0 0 35px #4267B2, 
+				 0 0 55px #4267B2; 
+	animation: antiRotate 60s infinite ease-in-out;
+}
+
+.button1 > i.fa-instagram {
+	color: #DD2A7B;
+	text-shadow: 0 0 15px #DD2A7B,
+				 0 0 25px #DD2A7B,
+				 0 0 35px #DD2A7B, 
+				 0 0 55px #DD2A7B; 
+	animation: antiRotate 60s infinite ease-in-out;
+}
+
+.button1 > i.fa-snapchat {
+	color: #FFFC00; 
+	text-shadow: 0 0 15px #FFFC00,
+				 0 0 25px #FFFC00,
+				 0 0 35px #FFFC00, 
+				 0 0 55px #FFFC00; 
+	animation: antiRotate 60s infinite ease-in-out;
+}
+
+.button1:hover, .profile:hover{
+	transform:scale(1.5);
+}
+
+.profile{
+	background-image:url('https://media1.popsugar-assets.com/files/thumbor/RO79ZyofXjP4sRqpKwK-TzgCfOw/0x0:1440x1440/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2020/08/05/669/n/47466785/14f29f115f2aca607a3f89.54452818_/i/how-to-take-headshots-at-home.jpg');
+	background-position: center;
+	background-size: cover;
+	border-radius: 50%;
+	height: 100px;
+	width: 400px;
+	box-shadow:  0 0 15px #fff,
+				 0 0 25px #fff,
+				 0 0 35px #fff;
+	animation-name: antiRotate;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+
+@keyframes rotate {
+	
+	0%{
+		transform: rotate(90deg);
+	}
+
+	50%{
+		transform: rotate(180deg);
+	}
+
+	50%{
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes antiRotate {
+	
+	0%{
+		transform: rotate(-90deg);
+	}
+
+	50%{
+		transform: rotate(-180deg);
+	}
+
+	50%{
+		transform: rotate(-360deg);
+	}
+}
+

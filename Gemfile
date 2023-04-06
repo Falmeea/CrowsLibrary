@@ -7,6 +7,8 @@ ruby "3.1.3"
 gem 'bootstrap', '~> 5.2.2'
 gem 'jquery-rails'
 gem "autoprefixer-rails"
+gem 'activestorage', '~> 7.0', '>= 7.0.4.2'
+gem 'image_processing'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4", ">= 7.0.4.2"

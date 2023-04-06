@@ -1,12 +1,119 @@
 <title>Crows Library</title>
+<body>
+         <!-- Image Carousel !-->
+<%= stylesheet_link_tag "home" %>
+<br>
+<br>
+
+
+<!DOCTYPE html>
+<!--divinectorweb.com-->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="carousel slide" data-bs-ride="carousel" data-interval ="60000" id="carouselExampleIndicators" >
+		<div class="carousel-indicators">
+			<button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators" type="button"></button> 
+      <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button"></button> 
+      <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators" type="button"></button>
+      <button aria-label="Slide 4" data-bs-slide-to="3" data-bs-target="#carouselExampleIndicators" type="button"></button>
+      <button aria-label="Slide 5" data-bs-slide-to="4" data-bs-target="#carouselExampleIndicators" type="button"></button>
+      <button aria-label="Slide 6" data-bs-slide-to="5" data-bs-target="#carouselExampleIndicators" type="button"></button>
+		</div>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+      <ul>
+        <li class="c-item"><%= image_tag('Tiena.png', class: "c-img img-fluid")%></li>
+				<div class="carousel-caption">
+					<h5 class="animated bounceInRight" style="animation-delay: 1s">TIENA DE TOLYVER</h5>
+					<p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 3">A New-Adult series about an adventurous girl, an absent, loving father and a world of magic and mystery.</p>
+					<p class="animated bounceInRight" style="animation-delay: 3s"><a href="http://localhost:3000/library.html">Learn More</a></p>
+				</div>
+			</div>
+      <div class="carousel-item">
+        <li class=" c-item"><%= image_tag('World_Tree.png', class: "c-img img-fluid")%></li>
+				<div class="carousel-caption">
+					<h5 class="animated bounceInRight" style="animation-delay: 2s">THE WORLD OF ESCALA</h5>
+					<p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 3s">Take your imagination to another level with Escala's First Age. Fantasy stories like you've never seen them. Here, Epic meets Ordinary</p>
+					<p class="animated bounceInRight" style="animation-delay: 3s"><a href="http://localhost:3000/library.html">Learn More</a></p>
+				</div>
+			</div>
+			<div class="carousel-item">
+        <li class=" c-item"><%= image_tag('Eight.png', class: "c-img img-fluid")%></li>
+				<div class="carousel-caption">
+					<h5 class="animated bounceInRight" style="animation-delay: 1s">EIGHT</h5>
+					<p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 3s">The Creator of Escala. To many he is nameless, he is God. To some few, he is Eighth and he more child than deity. Which side will you take?</p>
+					<p class="animated bounceInRight" style="animation-delay: 3s"><a href="http://localhost:3000/library.html">Learn More</a></p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<li class="c-item"><%= image_tag('Miners.png', class: "c-img img-fluid")%></li>
+				<div class="carousel-caption">
+					<h5 class="animated bounceInRight" style="animation-delay: 1s">PROJECT MIST</h5>
+					<p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 3s">There's but one truth of the Mists: There is no escape. From the Keep, Miners are sent for precious materials that they never see again, while they're hunted by nightmares and wander the Mists of other worlds.</p>
+					<p class="animated bounceInRight" style="animation-delay: 3s"><a href="http://localhost:3000/library.html">Learn More</a></p>
+				</div>
+			</div>
+      <div class="carousel-item">
+				<li class=" c-item"><%= image_tag('WhiteTower.png' , class: "c-img img-fluid")%></li>
+				<div class="carousel-caption">
+					<h5 class="animated bounceInRight" style="animation-delay: 1s">THE WHITE TOWER</h5>
+					<p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 3s">13 White Towers were left after the destruction of the First Age. Nor magic, nor Dwarven might can open them. But there is one who can, only she has no memory of who, or what she is.</p>
+					<p class="animated bounceInRight" style="animation-delay: 3s"><a href="http://localhost:3000/library.html">Learn More</a></p>
+				</div>
+			</div>
+      <div class="carousel-item">
+				<li class="carousel__item c-item"><%= image_tag('Veremon.png', class: "c-img img-fluid")%></li>
+				<div class="carousel-caption">
+					<h5 class="animated bounceInRight" style="animation-delay: 1s">VEREMON</h5>
+					<p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 3s">Animal Humanoids, borne from the ashes of the First Age, in the form of rats. As time went on, Escala saw more animals grow to learn speech, culture and religion. To this day, not many know how.</p>
+					<p class="animated bounceInRight" style="animation-delay: 3s"><a href="http://localhost:3000/library.html">Learn More</a></p>
+				</div>
+			</div>
+      
+		</div><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button> 
+    <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
+	</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+	
+	<div class="wrapper" id = "hero">
+		<div class="text-box">
+		 <h1>Hi, I'm Crow!</h1>
+    <h2>I am a Writer and a Worldbuilder, specialising in the Fantasy genre.</h2>
+			<div id="hero"><%= image_tag('Crow.png')%> 		
+	<p class = "text-box">I started writing at 13 after reading a book about clay dragons and polar bears (Chris D'lacey?) I thought to myself -I can do this! <br>
+	<br>
+	No offence, Chris I remember enjoying your books at the time.
+	<br>
+	<br>
+	That was it for me. My lessons were a mess of poor punctuality and confiscated writing books. At fourteen or fifteen I got my first laptop. My first line? "The Dwarves of Di were a queer bunch."
+	I was a strange child. 13 years on, however, the Dwarves of Di remain. Just one part of the vast world that has become Escala. 
+	A latin and Norse inspired word for 'The Ladder'; meant to remind you all of a Scale, or Weight. For all things in Escala are a Balance. There can be no Peace, without Chaos.
+	</p>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+
   
-<div class="d-flex alogn-items-center justify-content-center">
-  <h1>Welcome to Crow's Library, a resting place for Worldbuilders.</h1>
-</div>
-
-<p>Find me in app/views/pages/home.html.erb</p>
-
-
-<div> A simple home page, with the About Me at the bottom? 
-        Infinite Scroll? What for? My favourite things...
-</div> 
